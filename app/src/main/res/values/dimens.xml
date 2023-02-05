@@ -4,6 +4,7 @@
     <dimen name="splash_progress_size">70dp</dimen>
 
     <dimen name="small_margin">5dp</dimen>
+    <dimen name="xsmall_margin">7dp</dimen>
     <dimen name="medium_margin">10dp</dimen>
     <dimen name="xmedium_margin">15dp</dimen>
     <dimen name="large_margin">20dp</dimen>
@@ -31,4 +32,12 @@
     <dimen name="signin_btn_margin_top">85dp</dimen>
     <dimen name="timer_btn_width">125dp</dimen>
     <dimen name="timer_btn_height">25dp</dimen>
+
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="medium_padding">10dp</dimen>
+    <dimen name="xmedium_padding">15dp</dimen>
+    <dimen name="large_padding">20dp</dimen>
+    <dimen name="xlarge_padding">25dp</dimen>
+    <dimen name="xxlarge_padding">30dp</dimen>
+    <dimen name="xxxlarge_padding">40dp</dimen>
 </resources>

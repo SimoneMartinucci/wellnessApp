@@ -12,4 +12,9 @@
     <color name="blue_200">#E2EDF0</color>
     <color name="blue_500">#3B698F</color>
     <color name="blue_700">#1565C0</color>
+
+    <color name="activity_work_color">#FF5E5E</color>
+    <color name="activity_pause_color">#FFDB5E</color>
+    <color name="activity_hobby_color">#87FF5E</color>
+    <color name="activity_other_color">#5ED8FF</color>
 </resources>

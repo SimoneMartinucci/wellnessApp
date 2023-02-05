@@ -36,5 +36,6 @@
     <string name="timer_subtitle_label">Prenditi 15 Minuti Liberi</string>
     <string name="timer_btn_label">Avvia Timer</string>
     <string name="activities_title_label">Le Tue Attività Recenti</string>
+    <string name="progress_title_label">I Tuoi Progressi Settimanali</string>
 
 </resources>
