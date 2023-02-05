@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200"
+    tools:context=".ui.fragments.tutorial.TutorialFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tutorial_image_view"
+        android:layout_marginTop="@dimen/xxlarge_margin"
+        android:layout_width="@dimen/tutorial_image_width"
+        android:layout_height="@dimen/tutorial_image_height"
+        app:srcCompat="@drawable/tutorial_step_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tutorial_info_layout"
+        android:layout_width="@dimen/tutorial_image_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkg_tutorial_content"
+        app:layout_constraintEnd_toEndOf="@id/tutorial_image_view"
+        app:layout_constraintStart_toStartOf="@id/tutorial_image_view"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TutorialTitle"
+            android:id="@+id/tutorial_title_text_view"
+            tools:text="@string/tutorial_step1_title"
+            android:text="@string/tutorial_step1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="@id/cointainer_title_view"
+            app:layout_constraintTop_toTopOf="@id/cointainer_title_view"
+            app:layout_constraintBottom_toBottomOf="@id/cointainer_title_view"
+            app:layout_constraintStart_toStartOf="@id/cointainer_title_view"/>
+
+        <View
+            android:id="@+id/cointainer_title_view"
+            android:layout_width="@dimen/tutorial_image_width"
+            android:layout_height="@dimen/tutorial_background_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/bkg_tutorial_title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TutorialDescription"
+            android:id="@+id/tutorial_description"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/xlarge_margin"
+            android:layout_width="@dimen/tutorial_desc_width"
+            android:layout_height="wrap_content"
+            tools:text="@string/tutorial_step2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cointainer_title_view"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TutorialDescription"
+            android:id="@+id/tutorial4_desc1"
+            android:layout_marginTop="@dimen/xlarge_margin"
+            android:layout_width="@dimen/tutorial_desc_width"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_step4_first_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cointainer_title_view"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/TutorialButton"
+            android:visibility="visible"
+            android:id="@+id/tutorial_button_sign_up"
+            android:layout_width="@dimen/tutorial_button_width"
+            android:layout_height="@dimen/tutorial_button_height"
+            tools:text="@string/tutorial_sign_up"
+            android:text="@string/tutorial_sign_up"
+            android:layout_marginTop="@dimen/medium_margin"
+            app:layout_constraintTop_toBottomOf="@id/tutorial4_desc1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TutorialDescription"
+            android:id="@+id/tutorial4_desc2"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_width="@dimen/tutorial_desc_width"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_step4_second_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tutorial_button_sign_up"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/FacebookButton"
+            android:id="@+id/button_facebook"
+            android:drawableStart="@drawable/logo_facebook"
+            android:paddingStart="@dimen/medium_margin"
+            android:background="@drawable/bkg_button_facebook"
+            android:text="@string/facebook_button_text"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="@dimen/tutorial_button_width"
+            android:layout_height="@dimen/tutorial_button_height"
+            app:layout_constraintTop_toBottomOf="@id/tutorial4_desc2"
+            app:layout_constraintStart_toStartOf="@id/tutorial4_desc2"
+            app:layout_constraintEnd_toEndOf="@id/tutorial4_desc2"
+            android:layout_marginTop="@dimen/medium_margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/GoogleButton"
+            android:id="@+id/button_google"
+            android:drawableStart="@drawable/logo_google"
+            android:paddingStart="@dimen/medium_margin"
+            android:background="@drawable/bkg_button_google"
+            android:text="@string/google_button_text"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="@dimen/tutorial_button_width"
+            android:layout_height="@dimen/tutorial_button_height"
+            app:layout_constraintTop_toBottomOf="@id/button_facebook"
+            app:layout_constraintStart_toStartOf="@id/button_facebook"
+            app:layout_constraintEnd_toEndOf="@id/button_facebook"
+            android:layout_marginTop="@dimen/medium_margin"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/SignInLabel"
+            android:id="@+id/tutorial_sign_in_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            app:layout_constraintStart_toStartOf="@id/button_google"
+            app:layout_constraintEnd_toEndOf="@id/button_google"
+            app:layout_constraintTop_toBottomOf="@id/button_google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/tutorial_sign_in_label"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/TutorialButton"
+            android:visibility="gone"
+            android:id="@+id/tutorial_button_next_step"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_width="@dimen/tutorial_button_width"
+            android:layout_height="@dimen/tutorial_button_height"
+            tools:text="@string/tutorial_next_button"
+            android:text="@string/tutorial_next_button"
+            android:layout_marginBottom="@dimen/large_margin"
+            app:layout_constraintTop_toBottomOf="@id/tutorial_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/tutorial_info_group"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tutorial_description,tutorial_button_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/tutorial4_group"
+            android:visibility="visible"
+            app:constraint_referenced_ids="button_facebook,button_google,tutorial_button_sign_up,tutorial4_desc1,tutorial4_desc2,tutorial_sign_in_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

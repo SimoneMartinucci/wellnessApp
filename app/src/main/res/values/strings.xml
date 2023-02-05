@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">WellnessApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_subtitle">Relax Yourself!</string>
+    <string name="tutorial_step1_title">Riprenditi Il Tuo Tempo</string>
+    <string name="tutorial_step2_title">Dai Spazio ai Tuoi Hobby</string>
+    <string name="tutorial_step3_title">Traccia le Tue Attività</string>
+    <string name="tutorial_step4_title">Inizia Ora!</string>
+    <string name="tutorial_step1">Misura e Tieni sottocontrollo le attività da Te svolte durante una giornata.\n\nMonitora i Tuoi momenti di spazio e quante volte hai bisogno di Prenderti Una Pausa.</string>
+    <string name="tutorial_step2">Monitora quanto tempo dedichi a Te Stesso.\n\nLeggere un Libro, Ascoltare musica, Allenarti.\n\nControlla i Tuoi progressi durante la Settimana.</string>
+    <string name="tutorial_step3">Monitora quanto Tempo dedichi alle Tue Attività Principali.\n\nLavoro, Appuntamenti Importanti.\n\nControlla l’impatto di queste Attività con il Tempo Libero che ti dedichi</string>
+    <string name="tutorial_step4_first_desc">Registra ora il Tuo Account, bastano Pochi minuti.</string>
+    <string name="tutorial_step4_second_desc">Oppure Accedi con Un Tuo Account Social</string>
+    <string name="tutorial_step4_go_to_login">Ho già un Mio Account</string>
+    <string name="tutorial_sign_up">Registrati</string>
+    <string name="tutorial_next_button">Avanti</string>
+    <string name="tutorial_sign_in_label">Ho già un Mio Account</string>
+    <string name="google_button_text">Google</string>
+    <string name="facebook_button_text">Facebook</string>
+    <string name="email_label_edittext">E-mail</string>
+    <string name="password_label_edittext">Password</string>
+    <string name="login_button_label">Accedi</string>
+    <string name="login_lost_password_label">Password Dimenticata?</string>
+    <string name="login_send_button_label">Richiedi</string>
+    <string name="signin_send_button_label">Registrati</string>
+    <string name="sign_in_title_label">Inserisci i Tuoi Dati</string>
+    <string name="name_label_edittext">Nome</string>
+    <string name="confirm_email_label_edittext">Conferma E-mail</string>
+    <string name="confirm_password_label_edittext">Conferma Password</string>
+    <string name="home_label">Home</string>
+    <string name="progress_label">Progressi</string>
+    <string name="activities_label">Attività</string>
+    <string name="profile_label">Profilo</string>
+    <string name="timer_title_label">Prenditi Una Pausa</string>
+    <string name="timer_subtitle_label">Prenditi 15 Minuti Liberi</string>
+    <string name="timer_btn_label">Avvia Timer</string>
+    <string name="activities_title_label">Le Tue Attività Recenti</string>
+
+</resources>

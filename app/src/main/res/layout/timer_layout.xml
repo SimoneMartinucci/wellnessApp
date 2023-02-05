@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/large_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkg_tutorial_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/ContainerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_marginStart="@dimen/medium_margin"
+        app:layout_constraintStart_toStartOf="@id/container_title_view"
+        app:layout_constraintBottom_toBottomOf="@id/container_title_view"
+        app:layout_constraintTop_toTopOf="@id/container_title_view"
+        android:text="@string/timer_title_label"/>
+
+    <View
+        android:id="@+id/container_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tutorial_background_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bkg_title_container"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/container_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        app:layout_constraintTop_toBottomOf="@id/container_title_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/timer_logo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/ContainerSubtitle"
+        android:id="@+id/timer_subtitle_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_subtitle_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/container_image_view"
+        app:layout_constraintStart_toEndOf="@id/container_image_view"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/timer_btn_start"
+        style="@style/ContainerButton"
+        android:layout_width="@dimen/timer_btn_width"
+        android:layout_height="@dimen/timer_btn_height"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="@string/timer_btn_label"
+        app:layout_constraintEnd_toEndOf="@id/timer_subtitle_text_view"
+        app:layout_constraintStart_toStartOf="@id/timer_subtitle_text_view"
+        app:layout_constraintTop_toBottomOf="@id/timer_subtitle_text_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

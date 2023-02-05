@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreenSubtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/encode_sans</item>
+    </style>
+
+    <style name="TutorialTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/encode_sans_medium</item>
+    </style>
+
+    <style name="WelcomeMessageHomeTitle">
+        <item name="android:textColor">@color/blue_700</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/encode_sans_medium</item>
+    </style>
+
+    <style name="ContainerTitle">
+        <item name="fontFamily">@font/encode_sans_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ContainerSubtitle">
+        <item name="fontFamily">@font/encode_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+    </style>
+
+    <style name="LoginTitle" parent="TutorialTitle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SigninTitle" parent="TutorialTitle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TutorialDescription">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/encode_sans_medium</item>
+    </style>
+
+    <style name="TutorialButton">
+        <item name="android:background">@color/blue_500</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center|center_horizontal</item>
+        <item name="fontFamily">@font/encode_sans</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ContainerButton" parent="TutorialButton">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="LoginButton" parent="TutorialTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center|center_horizontal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/blue_500</item>
+    </style>
+
+    <style name="SignInButton" parent="LoginButton">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SocialButton">
+       <item name="fontFamily">@font/encode_sans_medium</item>
+       <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="FacebookButton" parent="SocialButton">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="GoogleButton" parent="SocialButton">
+        <item name="android:textColor">@color/blue_500</item>
+    </style>
+
+    <style name="SignInLabel">
+        <item name="android:textColor">@color/blue_700</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/encode_sans_bold</item>
+    </style>
+
+    <style name="LoginLabelEditText">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/encode_sans_medium</item>
+        <item name="android:textColor">@color/blue_700</item>
+    </style>
+
+    <style name="SignInLabelEditText" parent="LoginLabelEditText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EditTextLogin">
+        <item name="android:background">@drawable/bkg_login_edittext</item>
+    </style>
+
+    <style name="LoginLabelTextView">
+        <item name="android:textColor">@color/blue_700</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/encode_sans_medium</item>
+    </style>
+
+    <style name="MainBottomNavigation" parent="Theme.MaterialComponents">
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="colorOnPrimary">@color/blue_200</item>
+        <item name="backgroundTint">@color/blue_500</item>
+    </style>
+</resources>

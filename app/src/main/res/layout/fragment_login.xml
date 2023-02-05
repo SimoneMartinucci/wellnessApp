@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200"
+    tools:context=".ui.fragments.login.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_logo_imageview"
+        android:layout_width="@dimen/login_logo_size"
+        android:layout_height="@dimen/login_logo_size"
+        app:srcCompat="@drawable/wless_logo"
+        android:layout_marginTop="@dimen/xxxlarge_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_layout"
+        android:layout_width="@dimen/login_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xxlarge_margin"
+        android:paddingBottom="@dimen/xlarge_margin"
+        android:background="@drawable/bkg_tutorial_content"
+        app:layout_constraintTop_toBottomOf="@id/login_logo_imageview"
+        app:layout_constraintStart_toStartOf="@id/login_logo_imageview"
+        app:layout_constraintEnd_toEndOf="@id/login_logo_imageview">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginTitle"
+            android:id="@+id/login_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            tools:text="Benvenuto/a!"
+            app:layout_constraintEnd_toEndOf="@id/login_title_bkg"
+            app:layout_constraintTop_toTopOf="@id/login_title_bkg"
+            app:layout_constraintBottom_toBottomOf="@id/login_title_bkg"
+            app:layout_constraintStart_toStartOf="@id/login_title_bkg"/>
+
+        <View
+            android:id="@+id/login_title_bkg"
+            android:background="@drawable/bkg_tutorial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tutorial_background_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginLabelEditText"
+            android:id="@+id/email_label"
+            android:text="@string/email_label_edittext"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginStart="@dimen/xlarge_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/login_title_bkg"
+            app:layout_constraintStart_toStartOf="@id/login_title_bkg"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextLogin"
+            android:id="@+id/email_edittext"
+            android:layout_width="@dimen/edittext_login_width"
+            android:layout_height="@dimen/edittext_login_height"
+            android:layout_marginTop="@dimen/small_margin"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@id/email_label"
+            app:layout_constraintTop_toBottomOf="@id/email_label"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/LoginButton"
+            android:id="@+id/send_button"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/xlarge_margin"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:text="@string/login_send_button_label"
+            app:layout_constraintTop_toBottomOf="@id/email_edittext"
+            app:layout_constraintStart_toStartOf="@id/password_edittext"
+            app:layout_constraintEnd_toEndOf="@id/password_edittext"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginLabelEditText"
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/password_label_edittext"
+            app:layout_constraintTop_toBottomOf="@id/email_edittext"
+            app:layout_constraintStart_toStartOf="@id/email_edittext"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextLogin"
+            android:id="@+id/password_edittext"
+            android:layout_width="@dimen/edittext_login_width"
+            android:layout_height="@dimen/edittext_login_height"
+            android:layout_marginTop="@dimen/small_margin"
+            app:layout_constraintTop_toBottomOf="@id/password_label"
+            app:layout_constraintStart_toStartOf="@id/password_label"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/LoginButton"
+            android:id="@+id/login_button"
+            android:layout_marginTop="@dimen/xlarge_margin"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:text="@string/login_button_label"
+            app:layout_constraintTop_toBottomOf="@id/password_edittext"
+            app:layout_constraintStart_toStartOf="@id/password_edittext"
+            app:layout_constraintEnd_toEndOf="@id/password_edittext"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginLabelTextView"
+            android:id="@+id/sign_in_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/tutorial_sign_up"
+            app:layout_constraintTop_toBottomOf="@id/login_button"
+            app:layout_constraintStart_toStartOf="@id/login_button"
+            app:layout_constraintEnd_toEndOf="@id/login_button"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginLabelTextView"
+            android:id="@+id/lost_password_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/login_lost_password_label"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_textview"
+            app:layout_constraintStart_toStartOf="@id/sign_in_textview"
+            app:layout_constraintEnd_toEndOf="@id/sign_in_textview"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/facebook_login_btn"
+            app:srcCompat="@drawable/login_fb_button"
+            android:layout_width="@dimen/login_social_btn_size"
+            android:layout_height="@dimen/login_social_btn_size"
+            android:layout_marginTop="@dimen/xmedium_margin"
+            app:layout_constraintTop_toBottomOf="@id/lost_password_textview"
+            app:layout_constraintStart_toStartOf="@id/lost_password_textview"
+            app:layout_constraintEnd_toStartOf="@id/google_login_btn"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/google_login_btn"
+            app:srcCompat="@drawable/login_google_button"
+            android:layout_width="@dimen/login_social_btn_size"
+            android:layout_height="@dimen/login_social_btn_size"
+            app:layout_constraintTop_toTopOf="@id/facebook_login_btn"
+            app:layout_constraintBottom_toBottomOf="@id/facebook_login_btn"
+            app:layout_constraintStart_toEndOf="@id/facebook_login_btn"
+            app:layout_constraintEnd_toEndOf="@id/lost_password_textview"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
