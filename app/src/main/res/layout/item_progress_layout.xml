@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/small_margin"
+    android:paddingBottom="@dimen/medium_padding"
+    android:background="@drawable/bkg_activity_item"
+    android:layout_marginTop="@dimen/small_margin"
+    android:layout_marginBottom="@dimen/small_margin"
+    tools:backgroundTint="@color/activity_work_color"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -17,12 +21,47 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/progress_item_title_textview"
+        style="@style/TutorialDescription"
+        android:id="@+id/progress_item_name_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Lavoro"
         app:layout_constraintTop_toBottomOf="@id/progress_item_imageview"
         app:layout_constraintStart_toStartOf="@id/progress_item_imageview"
         app:layout_constraintEnd_toEndOf="@id/progress_item_imageview"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/ActivityItemTitle"
+        android:id="@+id/progress_item_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Percentuale del Tempo Dedicato"
+        app:layout_constraintTop_toTopOf="@id/progress_item_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/progress_item_imageview"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/progress_bar_activity"
+        android:layout_width="@dimen/progress_bar_activity_width"
+        android:layout_height="@dimen/progress_bar_activity_height"
+        android:layout_marginTop="@dimen/large_margin"
+        android:progressTint="@color/blue_700"
+        android:secondaryProgressTint="@color/white"
+        android:max="100"
+        tools:progress="40"
+        app:layout_constraintEnd_toEndOf="@id/progress_item_title_textview"
+        app:layout_constraintStart_toStartOf="@id/progress_item_title_textview"
+        app:layout_constraintTop_toBottomOf="@id/progress_item_title_textview"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/ActivityTiming"
+        android:id="@+id/progress_perc_activity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        app:layout_constraintEnd_toEndOf="@id/progress_bar_activity"
+        app:layout_constraintStart_toStartOf="@id/progress_bar_activity"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar_activity"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

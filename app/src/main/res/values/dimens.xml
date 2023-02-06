@@ -40,4 +40,6 @@
     <dimen name="xlarge_padding">25dp</dimen>
     <dimen name="xxlarge_padding">30dp</dimen>
     <dimen name="xxxlarge_padding">40dp</dimen>
+    <dimen name="progress_bar_activity_width">0dp</dimen>
+    <dimen name="progress_bar_activity_height">10dp</dimen>
 </resources>
