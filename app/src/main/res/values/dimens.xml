@@ -30,8 +30,8 @@
     <dimen name="login_social_btn_size">30dp</dimen>
 
     <dimen name="signin_btn_margin_top">85dp</dimen>
-    <dimen name="timer_btn_width">125dp</dimen>
-    <dimen name="timer_btn_height">25dp</dimen>
+    <dimen name="timer_btn_width">130dp</dimen>
+    <dimen name="timer_btn_height">35dp</dimen>
 
     <dimen name="small_padding">5dp</dimen>
     <dimen name="medium_padding">10dp</dimen>
@@ -42,4 +42,6 @@
     <dimen name="xxxlarge_padding">40dp</dimen>
     <dimen name="progress_bar_activity_width">0dp</dimen>
     <dimen name="progress_bar_activity_height">10dp</dimen>
+    <dimen name="dropdown_menu_width">180dp</dimen>
+    <dimen name="dropdown_menu_height">30dp</dimen>
 </resources>

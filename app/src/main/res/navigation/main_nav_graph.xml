@@ -12,12 +12,18 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_tutorialFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/tutorialFragment" />
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/loginFragment" />
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
@@ -27,6 +33,8 @@
         tools:layout="@layout/fragment_tutorial" >
         <action
             android:id="@+id/action_tutorialFragment_to_loginFragment"
+            app:popUpTo="@id/tutorialFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/loginFragment" />
         <action
             android:id="@+id/action_tutorialFragment_to_signInFragment"
@@ -62,5 +70,14 @@
         android:id="@+id/progressFragment"
         android:name="it.martinuccisimone.wellnessapp.ui.fragments.progress.ProgressFragment"
         android:label="fragment_progress"
-        tools:layout="@layout/fragment_progress" />
+        tools:layout="@layout/fragment_progress" >
+        <action
+            android:id="@+id/action_progressFragment_to_activitiesFragment"
+            app:destination="@id/activitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activitiesFragment"
+        android:name="it.martinuccisimone.wellnessapp.ui.fragments.activities.ActivitiesFragment"
+        android:label="fragment_activities"
+        tools:layout="@layout/fragment_activities" />
 </navigation>

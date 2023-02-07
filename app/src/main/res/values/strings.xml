@@ -37,5 +37,10 @@
     <string name="timer_btn_label">Avvia Timer</string>
     <string name="activities_title_label">Le Tue Attività Recenti</string>
     <string name="progress_title_label">I Tuoi Progressi Settimanali</string>
+    <string name="no_activities_label">Nessuna Attività Registrata.</string>
+    <string name="insert_activity_label">Registra Un\'Attività</string>
+    <string name="type_menu_hint_label">Seleziona Tipo</string>
+    <string name="start_activity_label">Start</string>
+    <string name="stop_activity_label">Stop</string>
 
 </resources>

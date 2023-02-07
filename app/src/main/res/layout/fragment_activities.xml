@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200"
+    tools:context=".ui.fragments.activities.ActivitiesFragment">
+
+    <include
+        android:id="@+id/activities_rv_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        layout="@layout/activities_layout"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/activities_timer_layout"
+        layout="@layout/timer_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintTop_toBottomOf="@id/activities_rv_layout"
+        app:layout_constraintStart_toStartOf="@id/activities_rv_layout"
+        app:layout_constraintEnd_toEndOf="@id/activities_rv_layout"/>
+
+    <include
+        android:id="@+id/activities_dropdown_menu_layout"
+        layout="@layout/insert_activity_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintTop_toBottomOf="@id/activities_timer_layout"
+        app:layout_constraintStart_toStartOf="@id/activities_timer_layout"
+        app:layout_constraintEnd_toEndOf="@id/activities_timer_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
