@@ -28,7 +28,7 @@ class SplashFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            findNavController().navigate(R.id.activitiesFragment)
         }, 3000)
     }
 

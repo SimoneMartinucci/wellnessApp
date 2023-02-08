@@ -42,5 +42,7 @@
     <string name="type_menu_hint_label">Seleziona Tipo</string>
     <string name="start_activity_label">Start</string>
     <string name="stop_activity_label">Stop</string>
+    <string name="type_label">Tipo</string>
+    <string name="pause_label">Sei In Pausa Adesso</string>
 
 </resources>
