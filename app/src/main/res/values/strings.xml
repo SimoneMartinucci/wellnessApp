@@ -44,5 +44,8 @@
     <string name="stop_activity_label">Stop</string>
     <string name="type_label">Tipo</string>
     <string name="pause_label">Sei In Pausa Adesso</string>
+    <string name="edit_avatar_label">Modifica Avatar</string>
+    <string name="edit_profile_label">Modifica Profilo</string>
+    <string name="logout_label">Logout</string>
 
 </resources>

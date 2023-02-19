@@ -11,6 +11,7 @@
     <dimen name="xlarge_margin">25dp</dimen>
     <dimen name="xxlarge_margin">30dp</dimen>
     <dimen name="xxxlarge_margin">40dp</dimen>
+    <dimen name="extralarge_margin">65dp</dimen>
     <dimen name="tutorial_image_width">340dp</dimen>
     <dimen name="tutorial_image_height">250dp</dimen>
     <dimen name="tutorial_background_height">35dp</dimen>
@@ -44,4 +45,6 @@
     <dimen name="progress_bar_activity_height">10dp</dimen>
     <dimen name="dropdown_menu_width">180dp</dimen>
     <dimen name="dropdown_menu_height">30dp</dimen>
+    <dimen name="profile_img_home_size">40dp</dimen>
+    <dimen name="profile_imageview_size">120dp</dimen>
 </resources>

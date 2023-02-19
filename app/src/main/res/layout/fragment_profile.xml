@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200"
+    tools:context=".ui.fragments.profile.ProfileFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/WelcomeMessageHomeTitle"
+        android:id="@+id/profile_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_man_1"
+        tools:text="Simone"
+        android:layout_marginTop="@dimen/large_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_imageview"
+        android:layout_width="@dimen/profile_imageview_size"
+        android:layout_height="@dimen/profile_imageview_size"
+        android:src="@drawable/profile_man_1"
+        android:layout_marginTop="@dimen/xlarge_margin"
+        app:layout_constraintTop_toBottomOf="@id/profile_name_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/WelcomeMessageHomeTitle"
+        android:id="@+id/edit_avatar_textview"
+        app:layout_constraintTop_toBottomOf="@id/profile_imageview"
+        app:layout_constraintStart_toStartOf="@id/profile_imageview"
+        app:layout_constraintEnd_toEndOf="@id/profile_imageview"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/edit_avatar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_option_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_welcome_message_bkg"
+        android:layout_marginTop="@dimen/xxxlarge_margin"
+        android:layout_marginStart="@dimen/extralarge_margin"
+        android:layout_marginEnd="@dimen/extralarge_margin"
+        app:layout_constraintTop_toBottomOf="@id/edit_avatar_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/ContainerSubtitle"
+            android:id="@+id/edit_profile_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_label"
+            android:layout_marginTop="@dimen/large_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LogoutLabel"
+            android:id="@+id/logout_textview"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_textview"
+            app:layout_constraintStart_toStartOf="@id/edit_profile_textview"
+            app:layout_constraintEnd_toEndOf="@id/edit_profile_textview"
+            app:layout_constraintBottom_toTopOf="@id/version_app"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/logout_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TutorialDescription"
+            android:id="@+id/version_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Ver. 1.0.0"
+            android:layout_marginTop="@dimen/extralarge_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            app:layout_constraintTop_toBottomOf="@id/logout_textview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
