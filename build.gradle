@@ -4,3 +4,15 @@ plugins {
     id 'com.android.library' version '7.3.0' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
 }
+
+ext{
+    libsVersion = [
+            appCompat: "1.6.1",
+            constraintLayout: "2.1.4",
+            coreKtx: "1.9.0",
+            navigation: "2.5.3",
+            material: "1.8.0",
+            koin: "3.3.3",
+
+    ]
+}

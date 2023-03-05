@@ -24,5 +24,9 @@ class TutorialFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    companion object{
+
+    }
+
 
 }
