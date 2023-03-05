@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200"
+    tools:context=".ui.fragments.signin.SignInFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/xxlarge_margin"
+        android:layout_marginBottom="@dimen/xxlarge_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:paddingBottom="@dimen/xmedium_margin"
+        android:background="@drawable/bkg_tutorial_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/SigninTitle"
+            android:id="@+id/login_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="@string/sign_in_title_label"
+            app:layout_constraintEnd_toEndOf="@id/login_title_bkg"
+            app:layout_constraintTop_toTopOf="@id/login_title_bkg"
+            app:layout_constraintBottom_toBottomOf="@id/login_title_bkg"
+            app:layout_constraintStart_toStartOf="@id/login_title_bkg"/>
+
+        <View
+            android:id="@+id/login_title_bkg"
+            android:background="@drawable/bkg_tutorial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/signin_background_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/avatar_recyclerview"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"
+            app:layout_constraintTop_toBottomOf="@id/login_title_bkg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/xxxlarge_margin"
+            tools:listitem="@layout/item_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/SignInButton"
+            android:id="@+id/send_button"
+            android:layout_marginTop="@dimen/xxlarge_margin"
+            android:layout_width="@dimen/signin_button_width"
+            android:layout_height="@dimen/signin_button_height"
+            android:text="@string/signin_send_button_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar_recyclerview"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

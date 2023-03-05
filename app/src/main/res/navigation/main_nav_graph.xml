@@ -65,7 +65,11 @@
         android:id="@+id/signInFragment"
         android:name="it.martinuccisimone.wellnessapp.ui.fragments.signin.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_avatarFragment"
+            app:destination="@id/avatarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/progressFragment"
         android:name="it.martinuccisimone.wellnessapp.ui.fragments.progress.ProgressFragment"
@@ -92,5 +96,17 @@
         <action
             android:id="@+id/action_profileFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_avatarFragment"
+            app:destination="@id/avatarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatarFragment"
+        android:name="it.martinuccisimone.wellnessapp.ui.fragments.avatar.AvatarFragment"
+        android:label="AvatarFragment" >
+        <action
+            android:id="@+id/action_avatarFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
     </fragment>
 </navigation>

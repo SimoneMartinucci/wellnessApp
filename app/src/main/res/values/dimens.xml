@@ -47,4 +47,5 @@
     <dimen name="dropdown_menu_height">30dp</dimen>
     <dimen name="profile_img_home_size">40dp</dimen>
     <dimen name="profile_imageview_size">120dp</dimen>
+    <dimen name="avatar_item_image_size">60dp</dimen>
 </resources>
